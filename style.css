@@ -1,12 +1,17 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
+@font-face {
+    font-family: 'KG Red Hands';
+    src: url('KGRedHands.woff2') format('woff2'),
+        url('KGRedHands.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
-/* @font-face {
-    font-family: 'title';
-    src: url(/paragraph.ttf);
-} */
 
 /* variables */
 :root {
@@ -216,7 +221,7 @@ nav .toggle-btn {
 }
 
 .text-area h1 {
-    width: 350px;
+    width: 400px;
     font-size: 3rem;
     letter-spacing: 0.04em;
     word-spacing: 0.08em;
@@ -234,6 +239,8 @@ nav .toggle-btn {
     width: 350px;
     letter-spacing: 0.04em;
     line-height: 1.8;
+    font-weight: 350;
+    /* font-size: 13px; */
 
 
 
@@ -268,7 +275,23 @@ nav .toggle-btn {
 }
 
 /* tablet portait */
+@media only screen and (min-width:680px) and (max-width:850px) {
+    .hero img {
+        width: 400px;
+        margin-left: 1rem;
+    }
 
+
+    .text-area h1 {
+        width: 350px;
+        font-size: 1.8rem;
+    }
+
+    .text-area p {
+        font-size: 13px;
+        width: 300px;
+    }
+}
 
 
 .title-1 {
@@ -302,7 +325,8 @@ nav .toggle-btn {
 
     .title-1 h1 {
         display: block;
-        font-family: 'title';
+        font-family: 'KG Red Hands';
+
     }
 
     .hero img {
@@ -313,7 +337,7 @@ nav .toggle-btn {
     }
 
     .hero p {
-        width: 300px;
+        width: 250px;
         line-height: 3;
         margin: 0 auto;
         text-align: center;
@@ -356,4 +380,57 @@ nav .toggle-btn {
         display: none;
     }
 
+}
+
+.choose {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 2rem;
+
+}
+
+
+.choose h1 {
+    letter-spacing: 0.04em;
+    word-spacing: 0.08em;
+    line-height: 1.5;
+    font-family: 'KG Red Hands';
+    font-weight: normal;
+    font-style: normal;
+    color: var(--black-color);
+    text-align: center;
+
+
+}
+
+.reason-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    position: relative;
+    left: 5rem;
+    margin-top: 5rem;
+
+
+}
+
+
+.reason {
+    width: 500px;
+}
+
+.reason p {
+    width: 75%;
+    text-align: center;
+    line-height: 2.5;
+}
+
+.reason img {
+    margin-left: 25%;
+}
+
+.reason-3 {
+    margin-top: 3rem;
 }
