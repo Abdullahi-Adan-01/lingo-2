@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 
-@font-face {
+/* @font-face {
     font-family: 'title';
     src: url(/paragraph.ttf);
-}
+} */
 
 /* variables */
 :root {
@@ -221,7 +221,9 @@ nav .toggle-btn {
     letter-spacing: 0.04em;
     word-spacing: 0.08em;
     line-height: 1.5;
-    font-family: 'title';
+    font-family: 'KG Red Hands';
+    font-weight: normal;
+    font-style: normal;
 
 
     color: var(--black-color);
@@ -286,7 +288,9 @@ nav .toggle-btn {
     }
 
     .hero .title-1 {
-        font-family: 'title';
+        font-family: 'KG Red Hands';
+        font-weight: normal;
+        font-style: normal;
         text-align: center;
         font-size: 1.2rem;
 
