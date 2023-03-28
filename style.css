@@ -380,7 +380,10 @@ nav .toggle-btn {
         display: none;
     }
 
+
 }
+
+/* end of hero section */
 
 .choose {
     width: 100%;
@@ -433,50 +436,28 @@ nav .toggle-btn {
     margin-left: 25%;
 }
 
-.reason-3 {
-    margin-top: 3rem;
+.reason-3,
+.reason-2 {
+    margin-top: 2rem;
 }
 
-@media only screen and (max-width:680px) {
-    .reason-container {
 
-        margin-top: 5rem;
-    }
-
-    .choose {
-        margin-top: 0;
-    }
-
-    .choose p {
-        text-align: center;
-        width: 320px;
-    }
-
-    .reason img {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-
-    }
-
-    .choose .title-3 {
-        color: var(--black-color);
-        font-size: 1.2rem;
-
-    }
-
-
-}
 
 @media only screen and (min-width:680px) and (max-width:850px) {
-    .choose p {
+    .reason p {
         text-align: center;
         width: 320px;
     }
 
-    .reason {
+    .reason:not(.reason-1) {
         margin-top: 3rem;
 
     }
+
+    .reason-1 {
+        margin-top: 1rem;
+    }
+
 
     .reason img {
         margin-top: 2.5rem;
@@ -484,4 +465,19 @@ nav .toggle-btn {
 
     }
 
+
+
+}
+
+@media only screen and (max-width:680px) {
+    .reason>* {
+        margin: 1rem 0;
+
+    }
+
+    .reason p {
+        width: 55%;
+        margin-left: 30px;
+
+    }
 }
